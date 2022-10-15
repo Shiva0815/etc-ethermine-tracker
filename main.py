@@ -4,7 +4,7 @@ import pymongo
 client = pymongo.MongoClient(
     "mongodb://test1508:vHoiWVhMpoHZGXENFJDcse1Sxkdgyi5zEPWrgQOXIvuZ7PbEcdYmNul457FFLue96JD89eWvHguKC6WZNh8DKQ==@test1508.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@test1508@")
 mydb = client["mining"]
-mycol = mydb["main1"]
+mycol = mydb["main2"]
 miner_address = "0d5C3F715fc150F859F756Ec44dd846AE08A4364"
 r = requests.get("https://api-etc.ethermine.org/miner/:" +
                  miner_address+"/dashboard")
